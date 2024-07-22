@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Proctorio Screen Blanking",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "action": {
+      "default_popup": ""
+    },
+    "content_scripts": [
+        {
+            "matches":["https://*.instructure.com/*"],
+            "js": ["content-script.js"]
+        }
+    ]
+  }
